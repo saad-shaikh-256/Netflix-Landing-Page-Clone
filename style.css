@@ -1,0 +1,397 @@
+@import url('https: //fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+:root {
+   --primary-color: #6E6CDF;
+   --white-color: #ffffff;
+   --black-color: #212121;
+   --red-color: #e50914;
+   --red-hover-color: #c5050e;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   transition: .5s;
+   overflow-wrap: break-word;
+   font-family: "Poopins", sans-serif;
+}
+
+html,
+body {
+   background-color: #f7f6fe;
+   overflow-x: hidden;
+   width: 100dvw;
+   height: 100dvh;
+   color: var(--black-color);
+   scroll-behavior: smooth;
+}
+
+.home {
+   height: 90dvh;
+   width: 100dvw;
+   background-image: url(Assets/Images/bg.jpg);
+   background-position: center center;
+   object-fit: cover;
+   background-repeat: no-repeat;
+}
+
+.home .box {
+   height: 90dvh;
+   width: 100dvw;
+   background-color: #000;
+   opacity: .75;
+   position: absolute;
+   top: 0;
+   z-index: 0;
+}
+
+.home .nav {
+   top: 0;
+   z-index: 10;
+   position: relative;
+   width: 65dvw;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2dvh 1dvw;
+}
+
+.home .nav>img {
+   width: 8dvw;
+   height: auto;
+}
+
+.home .nav .CTA {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: .5dvw;
+   overflow: hidden;
+}
+
+.nav .CTA .language {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   padding: .8dvh .7dvw;
+   border: 1px solid #ffffff4f;
+   background: transparent;
+   cursor: pointer;
+   gap: .3dvw;
+   color: var(--white-color);
+   border-radius: 5px;
+
+   &:hover {
+      border: 2px solid #ffffffaa;
+   }
+}
+
+.nav .CTA .language select {
+   all: unset;
+   font-weight: 500;
+}
+
+.nav .CTA .language option {
+   background-color: var(--white-color);
+   color: var(--black-color);
+}
+
+.nav .CTA a {
+   all: unset;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: .8dvh .7dvw;
+   background-color: var(--red-color);
+   border: none;
+   cursor: pointer;
+   color: var(--white-color);
+   border-radius: 5px;
+   font-weight: 600;
+
+   &:hover {
+      background-color: var(--red-hover-color);
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .home {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .box {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .nav {
+      width: 90dvw;
+   }
+
+   .home .nav>img {
+      width: 22dvw;
+   }
+
+   .home .nav .CTA {
+      gap: 3dvw;
+   }
+
+   .nav .CTA .language {
+      padding: .8dvh 3dvw;
+      gap: .5dvw;
+   }
+
+   .nav .CTA .language select {
+      all: unset;
+      display: none;
+   }
+
+   .nav .CTA a {
+      padding: .8dvh 4dvw;
+      border-radius: 5px;
+      font-weight: 500;
+   }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+   .home {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .box {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .nav {
+      width: 90dvw;
+   }
+
+   .home .nav>img {
+      width: 16dvw;
+   }
+
+   .home .nav .CTA {
+      gap: 2dvw;
+   }
+
+   .nav .CTA .language {
+      padding: .8dvh 2dvw;
+      gap: .5dvw;
+   }
+
+   .nav .CTA .language select {
+      all: unset;
+      display: none;
+   }
+
+   .nav .CTA a {
+      padding: .8dvh 3dvw;
+      border-radius: 5px;
+      font-weight: 500;
+   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   .home {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .box {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .nav {
+      width: 90dvw;
+   }
+
+   .home .nav>img {
+      width: 12dvw;
+   }
+
+   .home .nav .CTA {
+      gap: 1.5dvw;
+   }
+
+   .nav .CTA .language {
+      padding: .8dvh 1.5dvw;
+      gap: 1dvw;
+   }
+
+   .nav .CTA .language select {
+      all: unset;
+   }
+
+   .nav .CTA a {
+      padding: .8dvh 2dvw;
+      border-radius: 5px;
+      font-weight: 500;
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   .home {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .box {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .nav {
+      width: 90dvw;
+   }
+
+   .home .nav>img {
+      width: 10dvw;
+   }
+
+   .home .nav .CTA {
+      gap: 1.5dvw;
+   }
+
+   .nav .CTA .language {
+      padding: .8dvh 1.5dvw;
+      gap: .8dvw;
+   }
+
+   .nav .CTA .language select {
+      all: unset;
+   }
+
+   .nav .CTA a {
+      padding: .8dvh 1.5dvw;
+      border-radius: 5px;
+      font-weight: 500;
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   .home {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .box {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   .home .nav {
+      width: 90dvw;
+   }
+
+   .home .nav>img {
+      width: 13dvw;
+   }
+
+   .home .nav .CTA {
+      gap: 1dvw;
+   }
+
+   .nav .CTA .language {
+      padding: .8dvh 1dvw;
+      gap: .8dvw;
+   }
+
+   .nav .CTA .language select {
+      all: unset;
+   }
+
+   .nav .CTA a {
+      padding: .8dvh 1.2dvw;
+      border-radius: 5px;
+      font-weight: 500;
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+   .home {
+      height: 75dvh;
+      width: 100dvw;
+   }
+
+   .home .box {
+      height: 75dvh;
+      width: 100dvw;
+   }
+
+   .home .nav {
+      width: 80dvw;
+   }
+
+   .home .nav>img {
+      width: 10dvw;
+   }
+
+   .home .nav .CTA {
+      gap: .8dvw;
+   }
+
+   .nav .CTA .language {
+      padding: .6dvh .7dvw;
+      gap: .5dvw;
+   }
+
+   .nav .CTA .language select {
+      all: unset;
+   }
+
+   .nav .CTA a {
+      padding: .6dvh 1dvw;
+      border-radius: 5px;
+      font-weight: 500;
+   }
+}
+
+@media (min-width: 1601px) {
+   .home {
+      height: 75dvh;
+      width: 100dvw;
+   }
+
+   .home .box {
+      height: 75dvh;
+      width: 100dvw;
+   }
+
+   .home .nav {
+      width: 85dvw;
+   }
+
+   .home .nav>img {
+      width: 8dvw;
+   }
+
+   .home .nav .CTA {
+      gap: .8dvw;
+   }
+
+   .nav .CTA .language {
+      padding: .6dvh .7dvw;
+      gap: .5dvw;
+   }
+
+   .nav .CTA .language select {
+      all: unset;
+   }
+
+   .nav .CTA a {
+      padding: .6dvh 1dvw;
+      border-radius: 5px;
+      font-weight: 500;
+   }
+}
