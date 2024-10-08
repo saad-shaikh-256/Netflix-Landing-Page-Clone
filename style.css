@@ -424,6 +424,72 @@ body {
    text-align: start;
 }
 
+.Footer {
+   position: relative;
+   width: 80dvw;
+   color: #d7d6d6;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 2vh;
+   margin: auto;
+   padding-top: 4dvh;
+}
+
+.Footer .PageLink {
+   padding-top: 2dvh;
+   width: 100%;
+   color: #d7d6d6;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   text-decoration: underline;
+   margin: auto;
+   justify-content: space-between;
+}
+
+.Footer .PageLink .links {
+   display: flex;
+   flex-direction: column;
+   gap: 2dvh;
+   font-size: 14px;
+}
+
+.Footer .language {
+   width: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   padding: .8dvh .7dvw;
+   border: 1px solid #ffffff4f;
+   background: transparent;
+   cursor: pointer;
+   gap: .3dvw;
+   color: #d7d6d6;
+   border-radius: 5px;
+
+   &:hover {
+      border: 2px solid #ffffffaa;
+   }
+}
+
+.Footer .language select {
+   all: unset;
+   font-weight: 500;
+}
+
+.Footer.language option {
+   background-color: #d7d6d6;
+   color: var(--black-color);
+}
+
+.Footer .F-logo {
+   padding-top: 2dvh;
+   padding-bottom: 10dvh;
+}
+
 @media only screen and (max-width: 480px) {
    .home {
       height: 65dvh;
@@ -625,6 +691,28 @@ body {
    .subEmail span {
       font-size: 16;
       font-weight: 500;
+   }
+
+   .Footer {
+      width: 90dvw;
+      gap: 2vh;
+      padding-top: 4dvh;
+   }
+
+   .Footer .PageLink {
+      padding-top: 2vh;
+      width: 90vw;
+      gap: 2vh;
+   }
+
+   .Footer .language {
+      padding: .8dvh 2dvw;
+      gap: 1dvw;
+   }
+
+   .Footer .F-logo {
+      padding-top: 2dvh;
+      padding-bottom: 10dvh;
    }
 }
 
@@ -835,6 +923,27 @@ body {
       font-weight: 500;
    }
 
+      .Footer {
+      width: 90dvw;
+      gap: 2vh;
+      padding-top: 4dvh;
+   }
+
+   .Footer .PageLink {
+      padding-top: 2vh;
+      width: 90vw;
+      gap: 2vh;
+   }
+
+   .Footer .language {
+      padding: .8dvh 2dvw;
+      gap: 1dvw;
+   }
+
+   .Footer .F-logo {
+      padding-top: 2dvh;
+      padding-bottom: 10dvh;
+   }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
