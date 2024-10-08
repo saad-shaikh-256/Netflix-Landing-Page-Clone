@@ -339,6 +339,7 @@ body {
    padding: 2.5dvh 1.2dvw;
    margin: 1dvh;
    justify-content: space-between;
+   gap: 2dvh;
    align-items: end;
 }
 
@@ -361,6 +362,66 @@ body {
 .ReasonSection .Reasons .textBox img {
    width: 30%;
    right: 0;
+}
+
+.FQAs {
+   width: 80dvw;
+   height: fit-content;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   color: var(--white-color);
+   margin: auto;
+   gap: 4dvh;
+   padding-top: 6dvh;
+}
+
+.FQAs .Heading {
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.FQAs .Question {
+   display: flex;
+   flex-direction: column;
+   gap: 1dvh;
+}
+
+.FQAs .Question .Questions {
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+   font-size: 24px;
+   font-weight: 500;
+   padding: 3dvh 2dvw;
+   background-color: #2d2d2d;
+
+   &:hover {
+      background-color: #545454;
+   }
+}
+
+.subEmail {
+   width: 80dvw;
+   height: fit-content;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   color: var(--white-color);
+   margin: auto;
+   gap: 2dvh;
+   padding-top: 6dvh;
+   padding-bottom: 4dvh;
+}
+
+.subEmail span {
+   font-size: 16;
+   font-weight: 500;
+   text-align: start;
 }
 
 @media only screen and (max-width: 480px) {
@@ -533,6 +594,37 @@ body {
    .ReasonSection .Reasons .textBox img {
       width: 20%;
       right: 0;
+   }
+
+   .FQAs {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 4dvh;
+      padding-bottom: 2dvh;
+   }
+
+   .FQAs .Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .FQAs .Question .Questions {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 3dvh 6dvw;
+   }
+
+   .subEmail {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 6dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .subEmail span {
+      font-size: 16;
+      font-weight: 500;
    }
 }
 
@@ -712,6 +804,37 @@ body {
       width: 20%;
       right: 0;
    }
+
+   .FQAs {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 4dvh;
+   }
+
+   .FQAs .Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .FQAs .Question .Questions {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 2.5dvh 4dvw;
+   }
+
+   .subEmail {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 6dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .subEmail span {
+      font-size: 16;
+      font-weight: 500;
+   }
+
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
@@ -880,6 +1003,45 @@ body {
    .ReasonSection .Reasons .textBox img {
       width: 15%;
       right: 0;
+   }
+
+   .FQAs {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 4dvh;
+   }
+
+   .FQAs .Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .FQAs .Question .Questions {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 2.5dvh 4dvw;
+   }
+
+   .subEmail {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 6dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .subEmail span {
+      font-size: 16;
+      font-weight: 500;
+   }
+
+   .subEmail .inputs {
+      gap: 1dvw;
+   }
+
+   .subEmail .inputs input {
+      width: 65%;
+      flex-grow: 0;
    }
 }
 
@@ -1050,6 +1212,45 @@ body {
       width: 10%;
       right: 0;
    }
+
+   .FQAs {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 4dvh;
+   }
+
+   .FQAs .Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .FQAs .Question .Questions {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 2.5dvh 3dvw;
+   }
+
+   .subEmail {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 6dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .subEmail span {
+      font-size: 16;
+      font-weight: 500;
+   }
+
+   .subEmail .inputs {
+      gap: 1dvw;
+   }
+
+   .subEmail .inputs input {
+      width: 65%;
+      flex-grow: 0;
+   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -1218,6 +1419,46 @@ body {
       width: 20%;
       right: 0;
    }
+
+   .FQAs {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 4dvh;
+   }
+
+   .FQAs .Heading {
+      font-size: 24px;
+      font-weight: 700;
+   }
+
+   .FQAs .Question .Questions {
+      width: 100%;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 3dvh 3dvw;
+   }
+
+   .subEmail {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 6dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .subEmail span {
+      font-size: 16;
+      font-weight: 500;
+   }
+
+   .subEmail .inputs {
+      gap: 1dvw;
+   }
+
+   .subEmail .inputs input {
+      width: 65%;
+      flex-grow: 0;
+   }
+
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {
@@ -1385,6 +1626,45 @@ body {
       width: 30%;
       right: 0;
    }
+
+   .FQAs {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 4dvh;
+   }
+
+   .FQAs .Heading {
+      font-size: 24px;
+      font-weight: 700;
+   }
+
+   .FQAs .Question .Questions {
+      width: 100%;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 3dvh 2dvw;
+   }
+
+   .subEmail {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 6dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .subEmail span {
+      font-size: 16;
+      font-weight: 500;
+   }
+
+   .subEmail .inputs {
+      gap: 1dvw;
+   }
+
+   .subEmail .inputs input {
+      width: 65%;
+      flex-grow: 0;
+   }
 }
 
 @media (min-width: 1601px) {
@@ -1506,10 +1786,7 @@ body {
       margin-right: -25px;
       margin-bottom: -10px;
    }
-}
 
-
-@media (min-width: 1601px) {
    .ReasonSection {
       width: 80dvw;
       height: fit-content;
@@ -1554,5 +1831,44 @@ body {
    .ReasonSection .Reasons .textBox img {
       width: 30%;
       right: 0;
+   }
+
+   .FQAs {
+      width: 80dvw;
+      gap: 4dvh;
+      padding-top: 4dvh;
+   }
+
+   .FQAs .Heading {
+      font-size: 24px;
+      font-weight: 700;
+   }
+
+   .FQAs .Question .Questions {
+      width: 100%;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 2.5dvh 2dvw;
+   }
+
+   .subEmail {
+      width: 90dvw;
+      gap: 2dvh;
+      padding-top: 6dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .subEmail span {
+      font-size: 16;
+      font-weight: 500;
+   }
+
+   .subEmail .inputs {
+      gap: 1dvw;
+   }
+
+   .subEmail .inputs input {
+      width: 65%;
+      flex-grow: 0;
    }
 }
