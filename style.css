@@ -20,7 +20,6 @@
 
 html,
 body {
-   background-color: #f7f6fe;
    overflow-x: hidden;
    width: 100dvw;
    height: 100dvh;
@@ -203,6 +202,101 @@ body {
    }
 }
 
+.Red-Line {
+   height: 5px;
+   width: 100dvw;
+   background: linear-gradient(to right, #e509143f, var(--red-color), var(--red-color), #e509143f);
+   border: none;
+   border-radius: 50%;
+   position: relative;
+}
+
+.MovieSection {
+   width: 80dvw;
+   height: 55dvh;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   color: var(--white-color);
+   margin: auto;
+   gap: 4dvh;
+   padding-top: 6dvh;
+}
+
+.MovieSection .glow {
+   width: 40dvw;
+   height: 100px;
+   position: absolute;
+   top: -9dvh;
+   background-color: #4d5ea8;
+   filter: blur(80px);
+   border-radius: 10px;
+   border-radius: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.MovieSection .Heading {
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.MovieSection .Movies {
+   width: 80dvw;
+   display: flex;
+   flex-direction: row;
+   gap: 2dvw;
+   align-items: center;
+   justify-content: space-between;
+   overflow: auto hidden;
+   padding-bottom: 4dvh;
+   border-radius: 4px;
+}
+
+.MovieSection .Movies::-webkit-scrollbar {
+   height: 6px;
+}
+
+.MovieSection .Movies::-webkit-scrollbar-track {
+   background: var(--black-color);
+}
+
+.MovieSection .Movies::-webkit-scrollbar-thumb {
+   background: var(--red-color);
+   border-radius: 6px;
+}
+
+.MovieSection .Movies::-webkit-scrollbar-thumb:hover {
+   background: var(--red-hover-color);
+}
+
+.MovieSection .Movies .Images {
+   display: flex;
+   align-items: end;
+   height: fit-content;
+}
+
+.MovieSection .Movies .Images img {
+   border-radius: 8px;
+   background-position: center center;
+   object-fit: cover;
+   background-repeat: no-repeat;
+}
+
+.MovieSection .Movies .Images span {
+   z-index: 1;
+   display: flex;
+   font-size: 100px;
+   font-weight: 700;
+   -webkit-text-stroke: 1px;
+   color: black;
+   -webkit-text-stroke-color: var(--white-color);
+   height: fit-content;
+   margin-right: -35px;
+   margin-bottom: -10px;
+}
+
 @media only screen and (max-width: 480px) {
    .home {
       height: 65dvh;
@@ -285,6 +379,49 @@ body {
       font-size: 18px;
       font-weight: 500;
       padding: 1.5dvh 6dvw;
+   }
+
+   .Red-Line {
+      height: 4px;
+      border-radius: 10%;
+   }
+
+   .MovieSection {
+      width: 90dvw;
+      height: 55dvh;
+      gap: 2dvh;
+      padding-top: 4dvh;
+   }
+
+   .MovieSection .glow {
+      width: 60dvw;
+      height: 80px;
+      top: -6dvh;
+   }
+
+   .MovieSection .Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .MovieSection .Movies {
+      width: 90dvw;
+      gap: 4dvw;
+      padding-bottom: 4dvh;
+   }
+
+   .MovieSection .Movies::-webkit-scrollbar {
+      display: none;
+   }
+
+   .MovieSection .Movies .Images img {
+      height: 156px;
+      width: 112px;
+   }
+
+   .MovieSection .Movies .Images span {
+      font-size: 70px;
+      font-weight: 800;
    }
 }
 
@@ -373,6 +510,51 @@ body {
       font-weight: 600;
       padding: 1.5dvh 4dvw;
    }
+
+   .Red-Line {
+      height: 4px;
+      border-radius: 10%;
+   }
+
+   .MovieSection {
+      width: 90dvw;
+      height: 55dvh;
+      gap: 2dvh;
+      padding-top: 4dvh;
+   }
+
+   .MovieSection .glow {
+      width: 60dvw;
+      height: 80px;
+      top: -6dvh;
+   }
+
+   .MovieSection .Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .MovieSection .Movies {
+      width: 90dvw;
+      gap: 4dvw;
+      padding-bottom: 4dvh;
+   }
+
+   .MovieSection .Movies::-webkit-scrollbar {
+      display: none;
+   }
+
+   .MovieSection .Movies .Images img {
+      height: 156px;
+      width: 112px;
+   }
+
+   .MovieSection .Movies .Images span {
+      font-size: 70px;
+      font-weight: 800;
+      margin-right: -25px;
+      margin-bottom: -10px;
+   }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
@@ -453,6 +635,47 @@ body {
       font-size: 18px;
       font-weight: 600;
       padding: 1.5dvh 4dvw;
+   }
+
+   .Red-Line {
+      height: 4px;
+      border-radius: 10%;
+   }
+
+   .MovieSection {
+      width: 90dvw;
+      height: 55dvh;
+      gap: 2dvh;
+      padding-top: 4dvh;
+   }
+
+   .MovieSection .glow {
+      width: 60dvw;
+      height: 80px;
+      top: -6dvh;
+   }
+
+   .MovieSection .Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .MovieSection .Movies {
+      width: 90dvw;
+      gap: 2dvw;
+      padding-bottom: 4dvh;
+   }
+
+   .MovieSection .Movies .Images img {
+      height: 156px;
+      width: 112px;
+   }
+
+   .MovieSection .Movies .Images span {
+      font-size: 70px;
+      font-weight: 800;
+      margin-right: -25px;
+      margin-bottom: -10px;
    }
 }
 
@@ -535,6 +758,47 @@ body {
       font-weight: 600;
       padding: 1.5dvh 4dvw;
    }
+
+   .Red-Line {
+      height: 4px;
+      border-radius: 10%;
+   }
+
+   .MovieSection {
+      width: 90dvw;
+      height: 55dvh;
+      gap: 2dvh;
+      padding-top: 4dvh;
+   }
+
+   .MovieSection .glow {
+      width: 60dvw;
+      height: 80px;
+      top: -6dvh;
+   }
+
+   .MovieSection .Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .MovieSection .Movies {
+      width: 90dvw;
+      gap: 2dvw;
+      padding-bottom: 4dvh;
+   }
+
+   .MovieSection .Movies .Images img {
+      height: 156px;
+      width: 112px;
+   }
+
+   .MovieSection .Movies .Images span {
+      font-size: 70px;
+      font-weight: 800;
+      margin-right: -25px;
+      margin-bottom: -10px;
+   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -614,6 +878,47 @@ body {
       font-size: 18px;
       font-weight: 600;
       padding: 2vh 2.5dvw;
+   }
+
+   .Red-Line {
+      height: 5px;
+      border-radius: 20%;
+   }
+
+   .MovieSection {
+      width: 90dvw;
+      height: 55dvh;
+      gap: 4dvh;
+      padding-top: 6dvh;
+   }
+
+   .MovieSection .glow {
+      width: 60dvw;
+      height: 80px;
+      top: -6dvh;
+   }
+
+   .MovieSection .Heading {
+      font-size: 24px;
+      font-weight: 700;
+   }
+
+   .MovieSection .Movies {
+      width: 90dvw;
+      gap: 2dvw;
+      padding-bottom: 4dvh;
+   }
+
+   .MovieSection .Movies .Images img {
+      height: 196px;
+      width: 140px;
+   }
+
+   .MovieSection .Movies .Images span {
+      font-size: 70px;
+      font-weight: 800;
+      margin-right: -25px;
+      margin-bottom: -10px;
    }
 }
 
@@ -695,6 +1000,47 @@ body {
       font-weight: 600;
       padding: 1.6vh 2dvw;
    }
+
+   .Red-Line {
+      height: 4px;
+      border-radius: 30%;
+   }
+
+   .MovieSection {
+      width: 80dvw;
+      height: 55dvh;
+      gap: 4dvh;
+      padding-top: 6dvh;
+   }
+
+   .MovieSection .glow {
+      width: 60dvw;
+      height: 80px;
+      top: -6dvh;
+   }
+
+   .MovieSection .Heading {
+      font-size: 24px;
+      font-weight: 700;
+   }
+
+   .MovieSection .Movies {
+      width: 90dvw;
+      gap: 2dvw;
+      padding-bottom: 4dvh;
+   }
+
+   .MovieSection .Movies .Images img {
+      height: 196px;
+      width: 140px;
+   }
+
+   .MovieSection .Movies .Images span {
+      font-size: 80px;
+      font-weight: 800;
+      margin-right: -25px;
+      margin-bottom: -10px;
+   }
 }
 
 @media (min-width: 1601px) {
@@ -774,5 +1120,46 @@ body {
       font-size: 24px;
       font-weight: 600;
       padding: 1.6vh 2dvw;
+   }
+
+   .Red-Line {
+      height: 5px;
+      border-radius: 40%;
+   }
+
+   .MovieSection {
+      width: 80dvw;
+      height: 55dvh;
+      gap: 4dvh;
+      padding-top: 6dvh;
+   }
+
+   .MovieSection .glow {
+      width: 40dvw;
+      height: 80px;
+      top: -6dvh;
+   }
+
+   .MovieSection .Heading {
+      font-size: 24px;
+      font-weight: 700;
+   }
+
+   .MovieSection .Movies {
+      width: 90dvw;
+      gap: 2dvw;
+      padding-bottom: 4dvh;
+   }
+
+   .MovieSection .Movies .Images img {
+      height: 252px;
+      width: 180px;
+   }
+
+   .MovieSection .Movies .Images span {
+      font-size: 80px;
+      font-weight: 800;
+      margin-right: -25px;
+      margin-bottom: -10px;
    }
 }
