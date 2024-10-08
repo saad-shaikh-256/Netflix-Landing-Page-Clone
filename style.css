@@ -213,7 +213,7 @@ body {
 
 .MovieSection {
    width: 80dvw;
-   height: 55dvh;
+   height: fit-content;
    position: relative;
    display: flex;
    flex-direction: column;
@@ -295,6 +295,72 @@ body {
    height: fit-content;
    margin-right: -35px;
    margin-bottom: -10px;
+}
+
+.ReasonSection {
+   width: 80dvw;
+   height: fit-content;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   margin: auto;
+   padding-top: 4dvh;
+   gap: 4dvh;
+   color: var(--white-color);
+   padding-bottom: 4dvh;
+}
+
+.ReasonSection>.Heading {
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.ReasonSection .Reasons {
+   width: 100%;
+   height: 40dvh;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   overflow: hidden;
+   margin: auto;
+   gap: 1dvw;
+   color: var(--white-color);
+}
+
+.ReasonSection .Reasons .textBox {
+   display: flex;
+   flex-direction: column;
+   height: 30dvh;
+   width: 18dvw;
+   background: linear-gradient(to bottom, #1a2145, #220e17);
+   border-radius: 10px;
+   padding: 2.5dvh 1.2dvw;
+   margin: 1dvh;
+   justify-content: space-between;
+   align-items: end;
+}
+
+.ReasonSection .Reasons .textBox .Text {
+   display: flex;
+   flex-direction: column;
+   gap: 1dvh;
+}
+
+.ReasonSection .Reasons .textBox .Text .heading {
+   font-size: 18px;
+   font-weight: 800;
+}
+
+.ReasonSection .Reasons .textBox .Text .subText {
+   font-size: 14px;
+   opacity: 0.6;
+}
+
+.ReasonSection .Reasons .textBox img {
+   width: 30%;
+   right: 0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -388,7 +454,7 @@ body {
 
    .MovieSection {
       width: 90dvw;
-      height: 55dvh;
+      height: fit-content;
       gap: 2dvh;
       padding-top: 4dvh;
    }
@@ -422,6 +488,51 @@ body {
    .MovieSection .Movies .Images span {
       font-size: 70px;
       font-weight: 800;
+   }
+
+   .ReasonSection {
+      width: 90dvw;
+      height: fit-content;
+      display: flex;
+      padding-top: 2dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .ReasonSection>.Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons {
+      width: 100%;
+      height: fit-content;
+      gap: 1dvw;
+   }
+
+   .ReasonSection .Reasons .textBox {
+      height: fit-content;
+      width: fit-content;
+      flex-grow: 1;
+      padding: 3dvh 5dvw;
+   }
+
+   .ReasonSection .Reasons .textBox .Text {
+      gap: 1.5dvh;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .heading {
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .subText {
+      font-size: 14px;
+      opacity: 0.6;
+   }
+
+   .ReasonSection .Reasons .textBox img {
+      width: 20%;
+      right: 0;
    }
 }
 
@@ -518,7 +629,7 @@ body {
 
    .MovieSection {
       width: 90dvw;
-      height: 55dvh;
+      height: fit-content;
       gap: 2dvh;
       padding-top: 4dvh;
    }
@@ -554,6 +665,52 @@ body {
       font-weight: 800;
       margin-right: -25px;
       margin-bottom: -10px;
+   }
+
+   .ReasonSection {
+      width: 90dvw;
+      height: fit-content;
+      display: flex;
+      padding-top: 2dvh;
+      gap: 2dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .ReasonSection>.Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons {
+      width: 100%;
+      height: fit-content;
+      gap: 1dvw;
+   }
+
+   .ReasonSection .Reasons .textBox {
+      height: fit-content;
+      width: fit-content;
+      flex-grow: 1;
+      padding: 3dvh 5dvw;
+   }
+
+   .ReasonSection .Reasons .textBox .Text {
+      gap: 1.5dvh;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .heading {
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .subText {
+      font-size: 16px;
+      opacity: 0.6;
+   }
+
+   .ReasonSection .Reasons .textBox img {
+      width: 20%;
+      right: 0;
    }
 }
 
@@ -644,7 +801,7 @@ body {
 
    .MovieSection {
       width: 90dvw;
-      height: 55dvh;
+      height: fit-content;
       gap: 2dvh;
       padding-top: 4dvh;
    }
@@ -676,6 +833,53 @@ body {
       font-weight: 800;
       margin-right: -25px;
       margin-bottom: -10px;
+   }
+
+   .ReasonSection {
+      width: 90dvw;
+      height: fit-content;
+      display: flex;
+      padding-top: 4dvh;
+      gap: 2dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .ReasonSection>.Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons {
+      width: 100%;
+      height: fit-content;
+      gap: 1dvw;
+   }
+
+   .ReasonSection .Reasons .textBox {
+      height: fit-content;
+      width: fit-content;
+      flex-grow: 1;
+      padding: 3dvh 5dvw;
+   }
+
+   .ReasonSection .Reasons .textBox .Text {
+      width: 100%;
+      gap: 1.5dvh;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .heading {
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .subText {
+      font-size: 16px;
+      opacity: 0.6;
+   }
+
+   .ReasonSection .Reasons .textBox img {
+      width: 15%;
+      right: 0;
    }
 }
 
@@ -766,7 +970,7 @@ body {
 
    .MovieSection {
       width: 90dvw;
-      height: 55dvh;
+      height: fit-content;
       gap: 2dvh;
       padding-top: 4dvh;
    }
@@ -798,6 +1002,53 @@ body {
       font-weight: 800;
       margin-right: -25px;
       margin-bottom: -10px;
+   }
+
+   .ReasonSection {
+      width: 90dvw;
+      height: fit-content;
+      display: flex;
+      padding-top: 4dvh;
+      gap: 2dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .ReasonSection>.Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons {
+      width: 100%;
+      height: fit-content;
+      gap: 1dvw;
+   }
+
+   .ReasonSection .Reasons .textBox {
+      height: fit-content;
+      width: fit-content;
+      flex-grow: 1;
+      padding: 3dvh 3dvw;
+   }
+
+   .ReasonSection .Reasons .textBox .Text {
+      width: 100%;
+      gap: 1.5dvh;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .heading {
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .subText {
+      font-size: 16px;
+      opacity: 0.6;
+   }
+
+   .ReasonSection .Reasons .textBox img {
+      width: 10%;
+      right: 0;
    }
 }
 
@@ -887,7 +1138,7 @@ body {
 
    .MovieSection {
       width: 90dvw;
-      height: 55dvh;
+      height: fit-content;
       gap: 4dvh;
       padding-top: 6dvh;
    }
@@ -919,6 +1170,53 @@ body {
       font-weight: 800;
       margin-right: -25px;
       margin-bottom: -10px;
+   }
+
+   .ReasonSection {
+      width: 90dvw;
+      height: fit-content;
+      display: flex;
+      padding-top: 4dvh;
+      gap: 2dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .ReasonSection>.Heading {
+      font-size: 18px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons {
+      width: 100%;
+      height: fit-content;
+      gap: .5dvw;
+   }
+
+   .ReasonSection .Reasons .textBox {
+      height: fit-content;
+      width: 47%;
+      flex-grow: 1;
+      padding: 3dvh 3dvw;
+   }
+
+   .ReasonSection .Reasons .textBox .Text {
+      width: 100%;
+      gap: 1.5dvh;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .heading {
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .subText {
+      font-size: 16px;
+      opacity: 0.6;
+   }
+
+   .ReasonSection .Reasons .textBox img {
+      width: 20%;
+      right: 0;
    }
 }
 
@@ -1008,7 +1306,7 @@ body {
 
    .MovieSection {
       width: 80dvw;
-      height: 55dvh;
+      height: fit-content;
       gap: 4dvh;
       padding-top: 6dvh;
    }
@@ -1040,6 +1338,52 @@ body {
       font-weight: 800;
       margin-right: -25px;
       margin-bottom: -10px;
+   }
+
+   .ReasonSection {
+      width: 80dvw;
+      height: fit-content;
+      display: flex;
+      padding-top: 4dvh;
+      gap: 2dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .ReasonSection>.Heading {
+      font-size: 24px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons {
+      width: 90dvw;
+      height: fit-content;
+      gap: .5dvw;
+   }
+
+   .ReasonSection .Reasons .textBox {
+      height: 30dvh;
+      width: 18dvw;
+      padding: 3dvh 2dvw;
+   }
+
+   .ReasonSection .Reasons .textBox .Text {
+      width: 100%;
+      gap: 1.5dvh;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .heading {
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .subText {
+      font-size: 16px;
+      opacity: 0.6;
+   }
+
+   .ReasonSection .Reasons .textBox img {
+      width: 30%;
+      right: 0;
    }
 }
 
@@ -1129,7 +1473,7 @@ body {
 
    .MovieSection {
       width: 80dvw;
-      height: 55dvh;
+      height: 45dvh;
       gap: 4dvh;
       padding-top: 6dvh;
    }
@@ -1161,5 +1505,54 @@ body {
       font-weight: 800;
       margin-right: -25px;
       margin-bottom: -10px;
+   }
+}
+
+
+@media (min-width: 1601px) {
+   .ReasonSection {
+      width: 80dvw;
+      height: fit-content;
+      display: flex;
+      padding-top: 4dvh;
+      gap: 2dvh;
+      padding-bottom: 4dvh;
+   }
+
+   .ReasonSection>.Heading {
+      font-size: 24px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons {
+      width: 90dvw;
+      height: fit-content;
+      gap: .3dvw;
+   }
+
+   .ReasonSection .Reasons .textBox {
+      height: 26dvh;
+      width: 18.5dvw;
+      padding: 2dvh 1.5dvw;
+   }
+
+   .ReasonSection .Reasons .textBox .Text {
+      width: 100%;
+      gap: 1.5dvh;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .heading {
+      font-size: 24px;
+      font-weight: 700;
+   }
+
+   .ReasonSection .Reasons .textBox .Text .subText {
+      font-size: 16px;
+      opacity: 0.6;
+   }
+
+   .ReasonSection .Reasons .textBox img {
+      width: 30%;
+      right: 0;
    }
 }
