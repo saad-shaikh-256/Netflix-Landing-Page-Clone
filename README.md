@@ -5,7 +5,7 @@
 
 ## Live Demo
 
-Check out the live demo: [Netflix Landing Page UI Clone]([https://stream-net-flix-404.netlify.app/](https://saad-shaikh-256.github.io/Netflix-Landing-Page-Clone/))
+Check out the live demo: [Netflix Landing Page UI Clone](https://saad-shaikh-256.github.io/Netflix-Landing-Page-Clone/)
 
 ## Overview
 
