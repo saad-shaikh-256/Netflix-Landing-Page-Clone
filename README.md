@@ -5,7 +5,7 @@
 
 ## Live Demo
 
-Check out the live demo: [Netflix Landing Page UI Clone](https://xilften-clone.vercel.app/https://xilften-clone.vercel.app/)
+Check out the live demo: [Netflix Landing Page UI Clone](https://xilften-clone.vercel.app/)
 
 ## Overview
 
