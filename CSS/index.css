@@ -222,6 +222,15 @@ nav {
    }
 }
 
+.Red-Line {
+   height: 5px;
+   width: 100dvw;
+   background: linear-gradient(to right, #e509143f, var(--primary-color), var(--primary-color), #e509143f);
+   border: none;
+   border-radius: 50%;
+   position: relative;
+}
+
 @media only screen and (max-width: 480px) {
    main {
       height: 65dvh;
@@ -431,6 +440,59 @@ nav {
             padding: 5px 14px;
             font-size: 0.95rem;
             font-weight: 500;
+         }
+      }
+   }
+
+   #container {
+      width: 90%;
+      gap: 4dvh;
+
+      #headings {
+         width: 100%;
+         gap: 2dvh;
+
+         #heading {
+            width: 70%;
+            font-size: 2rem;
+         }
+
+         #subHeading {
+            width: 90%;
+            font-size: 1rem;
+         }
+      }
+
+      #emailBox {
+         gap: 3dvh;
+
+         #tagLine {
+            width: 90%;
+            font-size: 0.9rem;
+         }
+
+         #inputs {
+            width: 100%;
+            gap: 1.4dvh;
+
+            input {
+               width: 60%;
+               font-size: 1rem;
+               padding: 16px 24px;
+            }
+
+            #button {
+               padding: 14px 24px;
+
+               span {
+                  font-size: 1rem;
+               }
+
+               img {
+                  height: 24px;
+                  width: 24px;
+               }
+            }
          }
       }
    }
