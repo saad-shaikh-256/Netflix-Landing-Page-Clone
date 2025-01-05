@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+   --primary-color: #e50914;
+   --white-color: #ffffff;
+   --black-color: #212121;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+   transition: .5s;
+   overflow-wrap: break-word;
+}
+
+html,
+body {
+   background-color: #000;
+   overflow-x: hidden;
+   width: 100dvw;
+   height: 100dvh;
+   color: var(--black-color);
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+}
+
+main {
+   height: 85dvh;
+   width: 100dvw;
+   background-image: url(../Assets/Images/bg.jpg);
+   background-position: center center;
+   object-fit: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   overflow: hidden;
+
+   #box {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      z-index: 0;
+   }
+}
+
+nav {
+   width: 85%;
+   height: fit-content;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+   padding: 2dvh 1dvw;
+   position: relative;
+   z-index: 10;
+
+   #logo {
+      img {
+         width: 8dvw;
+         height: auto;
+      }
+   }
+
+   #buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1dvh;
+
+      #language {
+         width: fit-content;
+         height: fit-content;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 0.5dvh;
+         background-color: rgba(29, 29, 29, 0.75);
+         border: 1px solid #ffffff4f;
+         border-radius: 1000px;
+         padding: 4px 12px;
+
+         select {
+            all: unset;
+            width: 100%;
+            color: var(--white-color);
+            font-size: 1rem;
+
+            option {
+               background-color: var(--white-color);
+               color: var(--black-color);
+            }
+         }
+      }
+
+      #signIn {
+         width: fit-content;
+         height: fit-content;
+         background-color: var(--primary-color);
+         border-radius: 1000px;
+         padding: 4px 16px;
+         color: var(--white-color);
+         font-size: 1rem;
+         cursor: pointer;
+         font-weight: 500;
+      }
+   }
+}
+
+#container {
+   position: relative;
+   z-index: 10;
+   width: 85%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   color: var(--white-color);
+   gap: 6dvh;
+
+   #headings {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2dvh;
+
+      #heading {
+         width: 45%;
+         font-size: 3.5rem;
+         font-weight: 800;
+         text-align: center;
+         line-height: 1.2;
+      }
+
+      #subHeading {
+         width: 45%;
+         font-size: 1.25rem;
+         opacity: 90%;
+         text-align: center;
+         line-height: 1.2;
+      }
+   }
+
+   #emailBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2.5dvh;
+
+      #tagLine {
+         width: 45%;
+         font-size: 1rem;
+         font-weight: 500;
+         text-align: center;
+         line-height: 1.2;
+         overflow: hidden;
+         opacity: 80%;
+      }
+
+      #inputs {
+         width: 100%;
+         color: var(--white-color);
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         gap: .5dvw;
+
+         input {
+            width: 24%;
+            color: var(--white-color);
+            text-align: start;
+            border: 1px solid rgb(83, 83, 83);
+            backdrop-filter: blur(90px);
+            background: none;
+            font-size: 1rem;
+            outline: none;
+            border-radius: 1000px;
+            padding: 20px 24px;
+
+            &::placeholder {
+               color: rgb(222, 222, 222);
+               opacity: 1;
+               font-weight: 400;
+            }
+         }
+
+         #button {
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: var(--primary-color);
+            padding: 12px 24px;
+            border-radius: 1000px;
+
+            span {
+               color: var(--white-color);
+               font-size: 24px;
+               font-weight: 600;
+            }
+
+            img {
+               height: 28px;
+               width: 28px;
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   main {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   nav {
+      width: 90%;
+
+      #logo {
+         img {
+            width: 22dvw;
+         }
+      }
+
+      #buttons {
+         gap: 1dvh;
+
+         #language {
+            gap: 0.5dvh;
+            padding: 8px 12px;
+
+            select {
+               display: none;
+            }
+         }
+
+         #signIn {
+            padding: 4px 14px;
+            font-size: 0.95rem;
+            font-weight: 500;
+         }
+      }
+   }
+
+   #container {
+      width: 90%;
+      gap: 4dvh;
+
+      #headings {
+         width: 100%;
+         gap: 2dvh;
+
+         #heading {
+            width: 90%;
+            font-size: 1.8rem;
+         }
+
+         #subHeading {
+            width: 90%;
+            font-size: 1rem;
+         }
+      }
+
+      #emailBox {
+         gap: 2.5dvh;
+
+         #tagLine {
+            width: 90%;
+            font-size: 0.9rem;
+         }
+
+         #inputs {
+            width: 100%;
+            gap: 1dvh;
+
+            input {
+               width: 90%;
+               font-size: 1rem;
+               padding: 16px 24px;
+            }
+
+            #button {
+               padding: 10px 24px;
+
+               span {
+                  font-size: 1rem;
+               }
+
+               img {
+                  height: 24px;
+                  width: 24px;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+   main {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   nav {
+      width: 90%;
+
+      #logo {
+         img {
+            width: 16dvw;
+         }
+      }
+
+      #buttons {
+         gap: 1dvh;
+
+         #language {
+            gap: 0.5dvh;
+            padding: 8px 12px;
+
+            select {
+               display: none;
+            }
+         }
+
+         #signIn {
+            padding: 5px 14px;
+            font-size: 0.95rem;
+            font-weight: 500;
+         }
+      }
+   }
+
+   #container {
+      width: 90%;
+      gap: 4dvh;
+
+      #headings {
+         width: 100%;
+         gap: 2dvh;
+
+         #heading {
+            width: 90%;
+            font-size: 1.8rem;
+         }
+
+         #subHeading {
+            width: 90%;
+            font-size: 1rem;
+         }
+      }
+
+      #emailBox {
+         gap: 2.5dvh;
+
+         #tagLine {
+            width: 90%;
+            font-size: 0.9rem;
+         }
+
+         #inputs {
+            width: 100%;
+            gap: 1dvh;
+
+            input {
+               width: 90%;
+               font-size: 1rem;
+               padding: 16px 24px;
+            }
+
+            #button {
+               padding: 10px 24px;
+
+               span {
+                  font-size: 1rem;
+               }
+
+               img {
+                  height: 24px;
+                  width: 24px;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+   main {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   nav {
+      width: 90%;
+
+      #logo {
+         img {
+            width: 12dvw;
+         }
+      }
+
+      #buttons {
+         gap: 1dvh;
+
+         #language {
+            gap: 0.8dvh;
+            padding: 6px 12px;
+
+            select {
+               font-size: 0.95rem;
+            }
+         }
+
+         #signIn {
+            padding: 5px 14px;
+            font-size: 0.95rem;
+            font-weight: 500;
+         }
+      }
+   }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   main {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   nav {
+      width: 90%;
+
+      #logo {
+         img {
+            width: 10dvw;
+         }
+      }
+
+      #buttons {
+         gap: 1dvh;
+
+         #language {
+            gap: 0.8dvh;
+            padding: 6px 12px;
+
+            select {
+               font-size: 0.95rem;
+            }
+         }
+
+         #signIn {
+            padding: 5px 14px;
+            font-size: 0.95rem;
+            font-weight: 500;
+         }
+      }
+   }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+   main {
+      height: 65dvh;
+      width: 100dvw;
+   }
+
+   nav {
+      width: 90%;
+
+      #logo {
+         img {
+            width: 12dvw;
+         }
+      }
+
+      #buttons {
+         gap: 1dvh;
+
+         #language {
+            gap: 0.8dvh;
+            padding: 6px 12px;
+
+            select {
+               font-size: 0.95rem;
+            }
+         }
+
+         #signIn {
+            padding: 5px 14px;
+            font-size: 0.95rem;
+            font-weight: 500;
+         }
+      }
+   }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+   main {
+      height: 75dvh;
+      width: 100dvw;
+   }
+
+   nav {
+      width: 80%;
+
+      #logo {
+         img {
+            width: 10dvw;
+         }
+      }
+
+      #buttons {
+         gap: 1dvh;
+
+         #language {
+            gap: 0.8dvh;
+            padding: 6px 12px;
+
+            select {
+               font-size: 0.95rem;
+            }
+         }
+
+         #signIn {
+            padding: 5px 14px;
+            font-size: 0.95rem;
+            font-weight: 500;
+         }
+      }
+   }
+}
+
+@media (min-width: 1601px) {
+   main {
+      height: 85dvh;
+      width: 100dvw;
+   }
+
+   nav {
+      width: 85%;
+
+      #logo {
+         img {
+            width: 8dvw;
+         }
+      }
+
+      #buttons {
+         gap: 1dvh;
+
+         #language {
+            gap: 0.8dvh;
+            padding: 6px 12px;
+
+            select {
+               font-size: 1rem;
+            }
+         }
+
+         #signIn {
+            padding: 5px 14px;
+            font-size: 1rem;
+            font-weight: 500;
+         }
+      }
+   }
+}
