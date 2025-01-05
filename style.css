@@ -2,10 +2,10 @@
 
 :root {
    --primary-color: #6E6CDF;
-   --white-color: #ffffff;
+  --white-color: #ffffff;
    --black-color: #212121;
    --red-color: #e50914;
-   --red-hover-color: #c5050e;
+   --red-hover-color: #c5050e; 
 }
 
 * {
