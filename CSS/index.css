@@ -231,6 +231,86 @@ nav {
    position: relative;
 }
 
+#movies {
+   width: 80%;
+   margin: auto;
+   color: white;
+   padding: 6vh 0;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 6vh;
+   overflow: hidden;
+}
+
+#glow {
+   width: 40vw;
+   height: 100px;
+   position: absolute;
+   top: -9vh;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #4d5ea8;
+   filter: blur(80px);
+   border-radius: 20%;
+}
+
+#trendingNow,
+#netflixOnly {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 2vh;
+   overflow: hidden;
+}
+
+.heading {
+   font-size: 32px;
+   font-weight: bold;
+}
+
+#trendingImages,
+#netflixOnlyImages {
+   display: flex;
+   gap: 1rem;
+   transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+   width: 240px;
+   height: 330px;
+   border-radius: 16px;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+}
+
+.slide:hover {
+   transform: scale(1.05);
+}
+
+#nav {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   top: -20px;
+}
+
+button {
+   background-color: rgba(0, 0, 0, 0.7);
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   font-size: 16px;
+   border-radius: 8px;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color: rgba(255, 255, 255, 0.7);
+   color: black;
+}
+
 @media only screen and (max-width: 480px) {
    main {
       height: 65dvh;
@@ -711,58 +791,58 @@ nav {
       }
    }
 
-        #container {
-           width: 90%;
-           gap: 4dvh;
-   
-           #headings {
-              width: 60%;
-              gap: 2dvh;
-   
-              #heading {
-                 width: 70%;
-                 font-size: 3rem;
-              }
-   
-              #subHeading {
-                 width: 90%;
-                 font-size: 1.10rem;
-              }
-           }
-   
-           #emailBox {
-              gap: 3dvh;
-   
-              #tagLine {
-                 width: 50%;
-                 font-size: 0.9rem;
-              }
-   
-              #inputs {
-                 width: 60%;
-                 gap: 1dvh;
-   
-                 input {
-                    width: 50%;
-                    font-size: 1rem;
-                    padding: 18px 24px;
-                 }
-   
-                 #button {
-                    padding: 14px 24px;
-   
-                    span {
-                       font-size: 1.10rem;
-                    }
-   
-                    img {
-                       height: 26px;
-                       width: 26px;
-                    }
-                 }
-              }
-           }
-        }
+   #container {
+      width: 90%;
+      gap: 4dvh;
+
+      #headings {
+         width: 60%;
+         gap: 2dvh;
+
+         #heading {
+            width: 70%;
+            font-size: 3rem;
+         }
+
+         #subHeading {
+            width: 90%;
+            font-size: 1.10rem;
+         }
+      }
+
+      #emailBox {
+         gap: 3dvh;
+
+         #tagLine {
+            width: 50%;
+            font-size: 0.9rem;
+         }
+
+         #inputs {
+            width: 60%;
+            gap: 1dvh;
+
+            input {
+               width: 50%;
+               font-size: 1rem;
+               padding: 18px 24px;
+            }
+
+            #button {
+               padding: 14px 24px;
+
+               span {
+                  font-size: 1.10rem;
+               }
+
+               img {
+                  height: 26px;
+                  width: 26px;
+               }
+            }
+         }
+      }
+   }
 }
 
 @media (min-width: 1601px) {
