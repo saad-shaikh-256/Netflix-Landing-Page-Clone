@@ -31,7 +31,7 @@
   <body class="h-screen w-screen bg-black text-white font-roboto">
     <section
       id="header"
-      class="h-[70%] sm:h-[75%] md:h-[85%] w-full bg-[url('../Assets/Images/bg.jpg')] bg-center bg-no-repeat bg-cover relative"
+      class="h-[70%] sm:h-[75%] lg:h-[85%] w-full bg-[url('../Assets/Images/bg.jpg')] bg-center bg-no-repeat bg-cover relative flex flex-col justify-between items-center"
     >
       <div id="shadow-box" class="bg-black/75 h-full w-full absolute z-0"></div>
 
@@ -74,6 +74,55 @@
           >
         </div>
       </nav>
+
+      <main
+        class="relative z-10 h-[85%] w-full flex justify-center items-center px-6 py-5 sm:px-12 md:px-14 lg:px-18 xl:px-24 2xl:px-32"
+      >
+        <div
+          class="w-[90%] sm:w-1/2 h-fit font-poppins flex flex-col gap-5 justify-center items-center"
+        >
+          <!-- Upper Container with Headings -->
+          <div
+            class="h-fit w-fit flex flex-col gap-5 justify-center items-center"
+          >
+            <div
+              class="h-fit w-fit flex flex-col gap-5 justify-center items-center"
+            >
+              <p
+                class="h-fit w-full sm:w-[90%] text-2xl sm:text-5xl text-center font-extrabold leading-tight"
+              >
+                Unlimited movies, TV shows and more
+              </p>
+              <p
+                class="h-fit text-base sm:text-xl text-center font-medium opacity-90"
+              >
+                Starts at ₹149. Cancel at any time.
+              </p>
+            </div>
+            <p class="w-full h-fit text-sm sm:text-base text-center opacity-80">
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+          </div>
+
+          <!-- Lower Container with input and button -->
+          <div
+            class="h-fit w-[95%] flex flex-col sm:flex-row justify-center items-center gap-2"
+          >
+            <input
+              type="email"
+              placeholder="Email address"
+              class="h-fit w-full sm:w-fit text-white text-start flex grow border border-[#535353] backdrop-blur-[90px] text-base outline-none rounded-full px-6 py-3 sm:py-4 placeholder:text-[#dedede]"
+            />
+            <button
+              class="bg-primary py-3 sm:py-4 px-6 rounded-full flex justify-center items-center gap-1 text-base sm:text-xl font-semibold"
+            >
+              Get Started
+              <i class="hgi hgi-stroke hgi-arrow-right-01 font-bold"></i>
+            </button>
+          </div>
+        </div>
+      </main>
     </section>
   </body>
 </html>
