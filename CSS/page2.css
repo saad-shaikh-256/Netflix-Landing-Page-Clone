@@ -1,0 +1,14 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  transition: 0.5s;
+  overflow-wrap: break-word;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100dvw;
+  height: 100dvh;
+  scroll-behavior: smooth;
+}

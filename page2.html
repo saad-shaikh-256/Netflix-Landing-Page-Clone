@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xilfteN Clone - by shaikhsaad256@gmail.com</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="Assets/Logo/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/page2.css" />
+
+    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="src/output.css" rel="stylesheet" />
+    <link href="src/input.css" rel="stylesheet" />
+
+    <!-- Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
+    />
+  </head>
+  <body class="h-screen w-screen bg-black text-white font-roboto">
+    <section
+      id="header"
+      class="h-[70%] sm:h-[75%] md:h-[85%] w-full bg-[url('../Assets/Images/bg.jpg')] bg-center bg-no-repeat bg-cover relative"
+    >
+      <div id="shadow-box" class="bg-black/75 h-full w-full absolute z-0"></div>
+
+      <nav
+        class="relative z-10 h-fit w-full flex justify-between items-center px-6 py-5 sm:px-12 md:px-14 lg:px-18 xl:px-24 2xl:px-32"
+      >
+        <div id="logo">
+          <img
+            src="Assets/Logo/Xilften_Logo.svg"
+            alt="Logo"
+            class="h-6 sm:h-7 md:h-8 lg:h-9 xl:h10 w-auto"
+          />
+        </div>
+
+        <div
+          id="buttons"
+          class="h-fit w-fit flex justify-center items-center gap-2"
+        >
+          <div
+            id="language"
+            class="h-8 sm:h-fit w-fit flex justify-center items-center gap-2 border bg-[#1d1d1dbf] border-[#ffffff4f] rounded-full px-4 py-1"
+          >
+            <img src="Assets/Icons/languageIcon.svg" alt="" />
+            <select
+              name="Options"
+              id="Options"
+              class="font-medium appearance-none w-fit hidden sm:block"
+            >
+              <option class="text-black">English</option>
+              <option class="text-black">हिन्दी</option>
+            </select>
+            <img src="Assets/Icons/arrowIcon.svg" alt="" />
+          </div>
+
+          <a
+            href=""
+            id="signIn"
+            class="bg-primary font-medium text-white px-4 py-1 rounded-full hover:bg-primary-hover h-8"
+            >Sign In</a
+          >
+        </div>
+      </nav>
+    </section>
+  </body>
+</html>

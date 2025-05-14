@@ -1,0 +1,26 @@
+{
+  "name": "netflix-landing-page-clone",
+  "version": "1.0.0",
+  "description": "![Netflix Clone](https://github.com/saad-shaikh-256/Netflix-Landing-Page-Clone/blob/main/Assets/Github-Cover/Cover.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saad-shaikh-256/Netflix-Landing-Page-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/saad-shaikh-256/Netflix-Landing-Page-Clone/issues"
+  },
+  "homepage": "https://github.com/saad-shaikh-256/Netflix-Landing-Page-Clone#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "tailwindcss": "^4.1.6"
+  }
+}

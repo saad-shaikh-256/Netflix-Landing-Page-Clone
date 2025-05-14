@@ -76,7 +76,7 @@ nav {
          justify-content: center;
          align-items: center;
          gap: 0.5dvh;
-         background-color: rgba(29, 29, 29, 0.75);
+         background-color: #1d1d1dbf;
          border: 1px solid #ffffff4f;
          border-radius: 1000px;
          padding: 4px 12px;
